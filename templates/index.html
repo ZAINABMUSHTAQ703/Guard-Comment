@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GuardComment 🛡️</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>💬 GuardComment</h1>
+    <p class="subtitle">Safe & Respectful Comment Section</p>
+
+    <div class="comment-box">
+      <textarea id="commentInput" placeholder="Type your comment..."></textarea>
+      <button onclick="submitComment()">Post Comment</button>
+    </div>
+
+    <div id="message"></div>
+
+    <h2>Approved Comments</h2>
+    <ul id="commentList"></ul>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #4c3bcf;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.comment-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+textarea {
+  width: 80%;              
+  margin: 0 auto;          
+  display: block;          
+  height: 100px;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  resize: none;
+  transition: border 0.3s;
+}
+
+
+textarea:focus {
+  border-color: #4c3bcf;
+  outline: none;
+}
+
+button {
+  width: 80%;              
+  padding: 12px;
+  background: #4c3bcf;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #3726a6;
+}
+
+#message {
+  margin: 15px 0;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#message.allowed {
+  color: green;
+}
+
+#message.blocked {
+  color: red;
+}
+
+#commentList {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  text-align: left;
+}
+
+#commentList li {
+  background: #f7f7ff;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border-left: 5px solid #4c3bcf;
+}
